@@ -4,7 +4,7 @@
 
 COOKIE = """"""
 
-import requests, json, os
+import requests, json, os, time
 
 def getGachaRecords(page=1):
     global COOKIE
