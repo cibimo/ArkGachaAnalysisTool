@@ -7,7 +7,7 @@ cookiePath = os.path.join(os.path.dirname(os.path.abspath(__file__)),'cookie.txt
 if os.path.exists(cookiePath) == False:
     f = open(cookiePath,'w+')
     f.close()
-    input('请在生成的cookie.txt中填入你的cookie')
+    print('请在生成的cookie.txt中填入你的cookie')
     input('按回车结束程序')
     exit()
 
