@@ -3,7 +3,7 @@
 # @Bilibili  : 38238808
 import requests, json, os, time
 
-cookiePath = os.path.join(os.path.dirname(os.path.abspath(__file__)),'cookie.txt')
+cookiePath = 'cookie.txt'
 if os.path.exists(cookiePath) == False:
     f = open(cookiePath,'w+')
     f.close()
@@ -39,7 +39,7 @@ def sortedDict(adict):
     return bdict
 
 def saveGachaRecores(gachaList):
-    jsonPath = os.path.join(os.path.dirname(os.path.abspath(__file__)),'gachaRecords.json')
+    jsonPath = 'gachaRecords.json'
     if os.path.exists(jsonPath) == False or open(jsonPath).read() == '':
         f = open(jsonPath,'w+')
         f.write(json.dumps({},ensure_ascii=False,separators=(',',':')))

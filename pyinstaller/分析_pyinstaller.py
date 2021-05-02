@@ -30,7 +30,7 @@ def accumulativeGacha(starNum,gachaList):
             num += 1
     return num, starRecord
 
-jsonPath = os.path.join(os.path.dirname(os.path.abspath(__file__)),'gachaRecords.json')
+jsonPath = 'gachaRecords.json'
 if os.path.exists(jsonPath) == False or open(jsonPath).read() == '':
     print('还未获取过抽卡数据')
     input('按回车结束程序')
