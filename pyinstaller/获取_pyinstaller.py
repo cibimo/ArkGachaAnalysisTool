@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 # @Author  : cibimo
 # @Bilibili  : 38238808
+import requests, json, os, time
 
 cookiePath = os.path.join(os.path.dirname(os.path.abspath(__file__)),'cookie.txt')
 if os.path.exists(cookiePath) == False:
     f = open(cookiePath,'w+')
     f.write()
     f.close()
-    input('请在生成的cookie.txt中填入你的cookie，按回车结束程序')
+    input('请在生成的cookie.txt中填入你的cookie')
+    input('按回车结束程序')
+    exit()
 
 if open(cookiePath).read() == '':
     print('cookie.txt为空')
@@ -15,8 +18,6 @@ if open(cookiePath).read() == '':
     exit()
 
 COOKIE = open(cookiePath).read()
-
-import requests, json, os, time
 
 def getGachaRecords(page=1):
     global COOKIE
