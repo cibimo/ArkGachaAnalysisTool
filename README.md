@@ -1,8 +1,7 @@
 # ArkGachaAnalysisTool
 本工具为明日方舟抽卡数据获取分析工具，其功能模仿原神的那个分析工具，但无图形化部分
-
-## 注意事项
-本工具在Mac OS下开发，Windows下的print输出可能有问题（shell的颜色代码不知道能不能显示）
+· 本工具已在 mac windows 测试，linux 未测试
+· 如需运行多个账号，请放置在不同文件夹内，防止使用同一个 gachaRecords.json
 
 ## 使用方法
 1. 安装python3，并安装requests库
