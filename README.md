@@ -1,4 +1,7 @@
 # ArkGachaAnalysisTool
+## ⚠️
+由于方舟API更改，此工具已失效，请使用 https://github.com/cibimo/arkgacha
+
 ## 注意事项
 1. 本工具为明日方舟抽卡数据获取分析工具，其功能模仿原神的那个分析工具，但无图形化部分
 2. 本工具已在 mac windows 测试，linux 未测试
